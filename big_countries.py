@@ -13,6 +13,7 @@ world = pd.DataFrame(data)
 
 # function
 def big_countries(world: pd.DataFrame) -> pd.DataFrame:
+    
     # df is used to store the filtered DataFrame
     df = world[(world['area'] >= 3000000) | (world['population'] >= 25000000)]
     # return the result set
